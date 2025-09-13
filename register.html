@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register - ANUGA SENITHU</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="matrixBackground"></canvas>
+  <header class="site-header">
+    <h1>User Registration</h1>
+  </header>
+
+  <main class="container">
+    <p><b>About this page:</b> New users can register an account with username, email, phone number, and password. Each account starts with 10 free coins.</p>
+
+    <div class="form-container">
+      <h2>Register</h2>
+      <form id="registerForm">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="phone" placeholder="Phone Number" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit" class="btn">Register</button>
+      </form>
+      <p>Already registered? <a href="login.html">Login</a></p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById("registerForm").addEventListener("submit", registerUser);
+  </script>
+</body>
+</html>
