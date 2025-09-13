@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="matrixBackground"></canvas>
+  <header class="site-header">
+    <h1>Admin Dashboard</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="marketplace.html">Marketplace</a>
+      <a href="plugins.html">Plugins</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <p><b>About this page:</b> The Admin Dashboard allows administrators to manage plugins, marketplace products, comments, users, and view statistics.</p>
+
+    <h2>Dashboard Stats</h2>
+    <div id="stats"></div>
+
+    <h3>Manage Admins</h3>
+    <form id="addAdminForm">
+      <input type="text" id="newAdminUser" placeholder="New Admin Username" required>
+      <input type="password" id="newAdminPass" placeholder="New Admin Password" required>
+      <button type="submit">Add Admin</button>
+    </form>
+
+    <h3>Comments Management</h3>
+    <div id="adminComments"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
