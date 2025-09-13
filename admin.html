@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Login - ANUGA SENITHU</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="matrixBackground"></canvas>
+  <header class="site-header">
+    <h1>Admin Login</h1>
+  </header>
+
+  <main class="container">
+    <p><b>About this page:</b> Admins can log in securely to access the Admin Dashboard and manage plugins, marketplace items, users, and comments.</p>
+
+    <div class="form-container">
+      <form id="adminForm">
+        <input type="text" id="adminUsername" placeholder="Admin Username" required>
+        <input type="password" id="adminPassword" placeholder="Admin Password" required>
+        <button type="submit" class="btn">Login</button>
+      </form>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById("adminForm").addEventListener("submit", loginAdmin);
+  </script>
+</body>
+</html>
