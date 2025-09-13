@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Plugins</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="matrixBackground"></canvas>
+  <header class="site-header">
+    <h1>Plugins</h1>
+  </header>
+
+  <main class="container">
+    <p><b>About this page:</b> This is where plugins for WhatsApp bots are added and managed. Admins can add and delete plugins with a password.</p>
+
+    <h2>Available Plugins</h2>
+    <div id="pluginList"></div>
+
+    <form id="addPluginForm">
+      <input type="text" id="pluginName" placeholder="Plugin Name" required>
+      <input type="text" id="pluginDesc" placeholder="Description" required>
+      <button type="submit">Add Plugin</button>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
